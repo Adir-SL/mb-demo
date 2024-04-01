@@ -70,7 +70,10 @@ a:hover {
     line-height: 150%;
     color: #333333;
 }
-
+.contentDiv iframe{
+    border-radius: 8px;
+    margin: 48px 0;
+}
 h2 {
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
