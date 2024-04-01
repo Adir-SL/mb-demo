@@ -70,10 +70,12 @@ a:hover {
     line-height: 150%;
     color: #333333;
 }
-.contentDiv iframe{
+
+.contentDiv iframe {
     border-radius: 8px;
     margin: 48px 0;
 }
+
 h2 {
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
@@ -114,7 +116,7 @@ pre b {
     width: 50%;
 }
 
-.flexDiv .innerDiv span{
+.flexDiv .innerDiv span {
     font-size: 2em;
 }
 
@@ -154,4 +156,19 @@ pre b {
         margin-left: 0;
     }
 
+}
+
+@media screen and (max-width: 800px) {
+    pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    img{
+        max-width: calc(100vw - 48px);
+    }
+    .contentDiv {
+        width: calc(100% - 48px);
+        padding: 0 24px;
+    }
 }
