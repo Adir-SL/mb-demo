@@ -164,11 +164,24 @@ pre b {
         word-break: break-word;
     }
 
-    img{
+    img {
         max-width: calc(100vw - 48px);
     }
+
     .contentDiv {
         width: calc(100% - 48px);
         padding: 0 24px;
+    }
+
+    .flexDiv .innerDiv span {
+        font-size: 1em;
+    }
+
+    .exampleDiv {
+        margin-bottom: 0;
+    }
+
+    .flexDiv {
+        margin-bottom: 120px;
     }
 }
