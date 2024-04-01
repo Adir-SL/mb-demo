@@ -184,4 +184,22 @@ pre b {
     .flexDiv {
         margin-bottom: 120px;
     }
+
+    header object {
+        transform-origin: top center;
+        transform: scale(1.5);
+    }
+    #titleDiv{
+        font-size: 14vw;
+    }
+    button{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 2em;
+    }
+    #wrapper{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
