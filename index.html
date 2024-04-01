@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400&family=Josefin+Slab:ital@0;1&display=swap"
         rel="stylesheet">
+        <script src="https://adir-sl.github.io/MotionBlurJS/blur.js"></script>
 </head>
 
 <body>
@@ -42,10 +43,15 @@
             <pre>&lt;div id="yourId" class="someClass <b>blurjs</b>"&gt;&lt;/div&gt;</pre>
             or
             <pre>&lt;div id="yourId" class="<b>fadejs</b> someClass"&gt;&lt;/div&gt;</pre>
-            <div class="exampleDiv">
-                <div class="elemDivA blurjs"></div>
-                <div class="elemDivB fadejs"></div>
-                <span>blurjs</span><span>fadejs</span>
+            <div class="exampleDiv flexDiv">
+                <div class="innerDiv">
+                    <span>blurjs</span>
+                    <div class="elemDivA blurjs"></div>
+                </div>
+                <div class="innerDiv">
+                    <span>fadejs</span>
+                    <div class="elemDivB fadejs"></div>
+                </div>
             </div>
             <h2>Maintatining opacity with fadejs</h2>
             If your elements require opacity (alpha channel), you can achieve that with fadejs by adding the fadejs-data
@@ -95,10 +101,7 @@
             or
             <pre>&lt;circle id="yourId" class="st0 <b>fadejs</b>" cx="200" cy="200" r="42" /&gt;</pre>
             <div class="exampleDiv">
-                <object alt="SVG Example" aria-label="SVG Example"
-                    data="/web/20231205184433im_/https://www.motionblurjs.com/svgExample.svg"></object>
-                    <!-- https://adir-sl.github.io/MotionBlurJS/ -->
-                <span>blurjs</span><span>fadejs</span>
+                <img src="images/MotionBlurJS_diff.gif" />
             </div>
         </div>
         <div class="contentDiv">

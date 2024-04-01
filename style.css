@@ -91,10 +91,64 @@ pre {
     color: #808080;
 }
 
-pre b{
+pre b {
     color: #000000;
 }
 
-.exampleDiv{
+.exampleDiv {
+    position: relative;
     padding-bottom: 64px;
+}
+
+.flexDiv {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 200px;
+    margin-top: 120px;
+}
+
+.flexDiv .innerDiv {
+    width: 50%;
+}
+
+.flexDiv .innerDiv span{
+    font-size: 2em;
+}
+
+.elemDivA,
+.elemDivB {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin-top: 24px;
+    margin-left: 0;
+    background-color: #ff770f;
+    animation: elemAnim 2000ms infinite;
+}
+
+@keyframes elemAnim {
+    0% {
+        margin-left: 0;
+    }
+
+    10% {
+        margin-left: 0;
+    }
+
+    40% {
+        margin-left: calc(50% - 68px);
+    }
+
+    60% {
+        margin-left: calc(50% - 68px);
+    }
+
+    90% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+
 }
