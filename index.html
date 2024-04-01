@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400&family=Josefin+Slab:ital@0;1&display=swap"
         rel="stylesheet">
-        <script src="https://adir-sl.github.io/MotionBlurJS/blur.js"></script>
+    <script src="https://adir-sl.github.io/MotionBlurJS/blur.js"></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             You can use <b>MotionBlurJS</b> by simply linking to it in your document head tag like so:
             <br>
             <pre>&lt;head&gt;
-    &lt;script src="<b><a href="https://web.archive.org/web/20231205184433/https://www.motionblurjs.com/blur.js">https://www.motionblurjs.com/blur.js</a></b>"&gt;&lt;/script&gt;
+    &lt;script src="<b><a href="https://adir-sl.github.io/MotionBlurJS/blur.js">https://adir-sl.github.io/MotionBlurJS/blur.js</a></b>"&gt;&lt;/script&gt;
 &lt;/head&gt;</pre>
             <br>
             After that, all you have to do is naming the class of the div you want to blur to either the <b>blurjs</b>
@@ -79,11 +79,19 @@
     &lt;img src="" onerror="<b>fadeMe(event);</b>" style="display:none !important;" /&gt;
 &lt;/div&gt;</pre>
             <div class="exampleDiv">
-                <div class="elemDivA"><img src="/web/20231205184433im_/https://www.motionblurjs.com/"
-                        onerror="blurMe(event);" style="display:none !important;"></div>
-                <div class="elemDivB"><img src="/web/20231205184433im_/https://www.motionblurjs.com/"
-                        onerror="fadeMe(event);" style="display:none !important;"></div>
-                <span>blurMe(event);</span><span>fadeMe(event);</span>
+                <div class="flexDiv">
+                    <div class="innerDiv">
+                        <span>blurMe(event);</span>
+                        <div class="elemDivA"><img src="" onerror="blurMe(event);" style="display:none !important;">
+                        </div>
+                    </div>
+                    <div class="innerDiv">
+                        <span>fadeMe(event);</span>
+                        <div class="elemDivB"><img src="" onerror="fadeMe(event);" style="display:none !important;">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="contentDiv">
@@ -92,7 +100,7 @@
             the svg tag, like so:
             <br>
             <pre>&lt;svg ...&gt;
-    &lt;script xlink:href = "<b><a href="https://web.archive.org/web/20231205184433/https://www.motionblurjs.com/blurSVG.js">https://www.motionblurjs.com/blurSVG.js</a></b>" /&gt;</pre>
+    &lt;script xlink:href = "<b><a href="https://adir-sl.github.io/MotionBlurJS/blurSVG.js">https://adir-sl.github.io/MotionBlurJS/blurSVG.js</a></b>" /&gt;</pre>
             <br>
             After that, all you have to do is naming the class of the element you want to blur to either the
             <b>blurjs</b> or <b>fadejs</b> class, you can mix it with your current classes as well by separating those
