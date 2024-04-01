@@ -78,3 +78,22 @@ h2 {
     font-size: 3em;
     line-height: 100%;
 }
+
+pre {
+    background-color: #eeeeee;
+    padding: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    color: #808080;
+}
+
+pre b{
+    color: #000000;
+}
+
+.exampleDiv{
+    padding-bottom: 64px;
+}
