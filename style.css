@@ -137,9 +137,14 @@ pre b {
     font-size: 1.3em;
     font-family: "Inter", sans-serif;
 }
-.tab-item{
-    border-bottom: 2px solid #ff770f;
+
+.tab-item {
+    border-bottom: 2px solid transparent;
     padding: 0.5em;
+}
+
+.tab-item.selected {
+    border-color: #ff770f;
 }
 
 @keyframes elemAnim {
