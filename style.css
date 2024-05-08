@@ -133,6 +133,7 @@ pre b {
 
 .tabs {
     display: flex;
+    gap: 12px;
     font-size: 1.3em;
     font-family: "Inter", sans-serif;
 }
