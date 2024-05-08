@@ -143,6 +143,7 @@ pre b {
     border-bottom: 2px solid transparent;
     padding: 0.5em;
     cursor: pointer;
+    user-select: none;
 }
 .tab-item:hover::before{
     content: '';
