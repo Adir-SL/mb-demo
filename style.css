@@ -134,8 +134,12 @@ pre b {
 .tabs {
     display: flex;
     gap: 1.3em;
+    color: #333333;
     font-size: 1.3em;
     font-family: "Inter", sans-serif;
+}
+.tab-item{
+    border-bottom: 2px solid #ff770f;
 }
 
 @keyframes elemAnim {
