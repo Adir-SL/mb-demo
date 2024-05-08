@@ -155,6 +155,9 @@ pre b {
     border-radius: 8px;
     z-index: -1;
 }
+.tab-item:active::before{
+    background-color: #dddddd;
+}
 
 .tab-item.selected {
     border-color: #ff770f;
