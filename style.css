@@ -139,6 +139,7 @@ pre b {
 }
 .tab-item{
     border-bottom: 2px solid #ff770f;
+    padding: 0.5em;
 }
 
 @keyframes elemAnim {
