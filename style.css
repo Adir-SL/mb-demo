@@ -139,8 +139,20 @@ pre b {
 }
 
 .tab-item {
+    position: relative;
     border-bottom: 2px solid transparent;
     padding: 0.5em;
+    cursor: pointer;
+}
+.tab-item:hover::before{
+    content: '';
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    left: 4%;
+    top: 4%;
+    background-color: gray;
+    z-index: -1;
 }
 
 .tab-item.selected {
