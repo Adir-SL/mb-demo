@@ -131,6 +131,12 @@ pre b {
     animation: elemAnim 2000ms infinite;
 }
 
+.tabs {
+    display: flex;
+    font-size: 1.3em;
+    font-family: "Inter", sans-serif;
+}
+
 @keyframes elemAnim {
     0% {
         margin-left: 0;
@@ -189,16 +195,20 @@ pre b {
         transform-origin: top center;
         transform: scale(1.5);
     }
-    #titleDiv{
+
+    #titleDiv {
         font-size: 14vw;
     }
-    button{
+
+    button {
         font-size: 16px;
     }
-    h2{
+
+    h2 {
         font-size: 2em;
     }
-    #wrapper{
+
+    #wrapper {
         overflow-x: hidden;
         overflow-y: auto;
     }
