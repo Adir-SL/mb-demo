@@ -147,11 +147,12 @@ pre b {
 .tab-item:hover::before{
     content: '';
     position: absolute;
-    width: 92%;
-    height: 92%;
-    left: 4%;
-    top: 4%;
-    background-color: gray;
+    width: 100%;
+    height: calc(100% - 0.5em);
+    left: 0;
+    top: 0.25em;
+    background-color: #ededed;
+    border-radius: 8px;
     z-index: -1;
 }
 
