@@ -147,12 +147,12 @@ pre b {
 .tab-item::after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
-    height: 2px;
+    height: 3px;
     width: 100%;
     background-color: #ff770f;
-    animation: removeSelected 150ms ease-in-out forwards;
+    animation: removeSelected 200ms ease-in-out forwards;
 }
 .tab-item:nth-last-of-type(2)::after{
     left: unset;
