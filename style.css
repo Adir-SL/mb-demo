@@ -140,10 +140,34 @@ pre b {
 
 .tab-item {
     position: relative;
-    border-bottom: 2px solid transparent;
     padding: 0.5em;
     cursor: pointer;
     user-select: none;
+}
+.tab-item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ff770f;
+    animation: removeSelected 150ms ease-in-out forwards;
+}
+.tab-item:nth-last-of-type(2)::after{
+    left: unset;
+    right: 0;
+}
+.tab-item.selected::after{
+    animation-name: addSelected;
+}
+@keyframes removeSelected{
+    0%{width: 100%;}
+    100%{width: 0;}
+}
+@keyframes addSelected{
+    0%{width: 0;}
+    100%{width: 100%;}
 }
 .tab-item:hover::before{
     content: '';
@@ -158,10 +182,6 @@ pre b {
 }
 .tab-item:active::before{
     background-color: #dddddd;
-}
-
-.tab-item.selected {
-    border-color: #ff770f;
 }
 
 @keyframes elemAnim {
