@@ -33,6 +33,18 @@
                 x[i].classList.remove('selected');
             }
             event.target.classList.add('selected');
+
+            var x = document.getElementsByClassName("tabContent");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove('selected');
+            }
+            if(event.target.innerText == "Examples"){
+                document.getElementsByClassName("tabContent")[1].classList.add('selected');
+            }else{
+                document.getElementsByClassName("tabContent")[0].classList.add('selected');
+            }
+            
         }
     </script>
 </head>
