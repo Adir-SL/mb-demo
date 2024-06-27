@@ -170,6 +170,7 @@ pre b {
 }
 .tabContent{
     display: none;
+    width: 100%;
 }
 .tabContent.selected{
     display: block;
