@@ -131,6 +131,10 @@ pre b {
     animation: elemAnim 2000ms infinite;
 }
 
+.tabsContents {
+    display: flex;
+}
+
 .tabs {
     display: flex;
     color: #333333;
@@ -144,7 +148,8 @@ pre b {
     cursor: pointer;
     user-select: none;
 }
-.tab-item::after{
+
+.tab-item::after {
     content: '';
     position: absolute;
     bottom: -3px;
@@ -154,22 +159,37 @@ pre b {
     background-color: #ff770f;
     animation: removeSelected 200ms ease-in-out forwards;
 }
-.tab-item:nth-last-of-type(2)::after{
+
+.tab-item:nth-last-of-type(2)::after {
     left: unset;
     right: 0;
 }
-.tab-item.selected::after{
+
+.tab-item.selected::after {
     animation-name: addSelected;
 }
-@keyframes removeSelected{
-    0%{width: 100%;}
-    100%{width: 0;}
+
+@keyframes removeSelected {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
 }
-@keyframes addSelected{
-    0%{width: 0;}
-    100%{width: 100%;}
+
+@keyframes addSelected {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
-.tab-item:hover::before{
+
+.tab-item:hover::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -180,7 +200,8 @@ pre b {
     border-radius: 8px;
     z-index: -1;
 }
-.tab-item:active::before{
+
+.tab-item:active::before {
     background-color: #dddddd;
 }
 
