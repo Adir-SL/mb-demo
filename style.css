@@ -173,12 +173,11 @@ pre b {
     width: 100%;
     opacity: 0;
     transform: scale(1, 0);
-    transition: opacity 300ms linear 0s;
+    transition: opacity 300ms linear 300ms;
 }
 .tabContent.selected{
     opacity: 1;
     transform: scale(1, 1);
-    transition: opacity 300ms linear 300ms;
 }
 
 @keyframes removeSelected {
