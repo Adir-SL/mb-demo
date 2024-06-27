@@ -293,4 +293,7 @@ pre b {
         overflow-x: hidden;
         overflow-y: auto;
     }
+    .tabs{
+        margin-top: 5vh;
+    }
 }
