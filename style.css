@@ -168,6 +168,12 @@ pre b {
 .tab-item.selected::after {
     animation-name: addSelected;
 }
+.tabContent{
+    display: none;
+}
+.tabContent.selected{
+    display: block;
+}
 
 @keyframes removeSelected {
     0% {
