@@ -144,7 +144,7 @@ pre b {
 
 .tab-item {
     position: relative;
-    padding: 0.5em;
+    padding: 12px 20px;
     cursor: pointer;
     user-select: none;
 }
