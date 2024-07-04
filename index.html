@@ -48,7 +48,14 @@
         }
 
         function resizeFunc(){
-            
+            var x = document.getElementsByTagName("object");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.data = "";
+                setTimeout(function(){
+                    x[i].style.data = "images/highway_anim.svg";
+                }, 100);
+            }
         }
     </script>
 </head>
