@@ -136,7 +136,11 @@ pre b {
 .tabsContents {
     display: flex;
 }
-
+.tabsDiv{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 .tabs {
     display: flex;
     color: #333333;
