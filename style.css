@@ -343,6 +343,7 @@ pre b {
     }
     .tabsDiv {
         top: 8.5em;
+        padding-bottom: 3px;
     }
     #titleDiv{
         flex-direction: column;
