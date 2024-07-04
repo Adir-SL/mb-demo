@@ -1,6 +1,7 @@
-body{
+body {
     overflow: hidden;
 }
+
 #wrapper {
     position: absolute;
     width: 100%;
@@ -18,13 +19,21 @@ object {
 }
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    height: fit-content;
+    width: calc(100% - 15px);
+}
+
+.sticky {
     position: sticky;
     top: 0;
+    z-index: 3;
+    clip-path: polygon(0 0, 100% 0, 100% 14em, 0 14em);
 }
 
 #titleDiv {
-    position: absolute;
+    position: fixed;
     top: 0.5em;
     left: 48px;
     margin: 0;
@@ -35,7 +44,7 @@ header {
     font-size: 6vw;
     color: #ffffff;
     text-shadow: 0 0 32px #00000032;
-    z-index: 1000;
+    z-index: 4;
 }
 
 button {
@@ -143,12 +152,14 @@ pre b {
 .tabsContents {
     display: flex;
 }
-.tabsDiv{
+
+.tabsDiv {
     position: sticky;
     top: 12em;
-    z-index: 999;
+    z-index: 9;
     background-color: #ffffff;
 }
+
 .tabs {
     display: flex;
     color: #333333;
@@ -308,7 +319,8 @@ pre b {
         overflow-x: hidden;
         overflow-y: auto;
     }
-    .tabs{
+
+    .tabs {
         margin-top: 5vh;
         font-size: 1em;
     }
