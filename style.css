@@ -221,6 +221,10 @@ pre b {
     transform: scale(1, 1);
 }
 
+.buttonFlex{
+    display: flex;
+}
+
 @keyframes removeSelected {
     0% {
         width: 100%;
@@ -338,6 +342,15 @@ pre b {
         font-size: 1em;
     }
     .tabsDiv {
-        top: 8em;
+        top: 8.5em;
+    }
+    #titleDiv{
+        flex-direction: column;
+    }
+    .sticky{
+        height: fit-content;
+    }
+    header{
+        display: none;
     }
 }
