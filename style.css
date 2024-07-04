@@ -21,6 +21,7 @@ header {
     position: absolute;
     top: .5em;
     left: 48px;
+    margin: 0;
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
     font-weight: 400;
