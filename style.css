@@ -164,6 +164,7 @@ pre b {
 .tabsDiv {
     position: sticky;
     top: 9em;
+    padding-bottom: 3px;
     z-index: 9;
     background-color: #ffffff;
 }
