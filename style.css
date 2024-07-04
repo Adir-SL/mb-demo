@@ -170,6 +170,7 @@ pre b {
     padding-top: 2em;
     z-index: 9;
     background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
 }
 
 .tabs {
