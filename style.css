@@ -337,4 +337,7 @@ pre b {
         margin-top: 5vh;
         font-size: 1em;
     }
+    .tabsDiv {
+        top: 8em;
+    }
 }
