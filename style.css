@@ -15,7 +15,7 @@ body {
 
 object {
     background-color: #84a819;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%);
+    clip-path: polygon(0 0, 100% 0, 100% 24em, 0 24em);
 }
 
 header {
@@ -23,11 +23,13 @@ header {
     top: 0;
     height: fit-content;
     width: calc(100% - 15px);
+    height: 24em;
 }
 
 .sticky {
     position: sticky;
     top: 0;
+    height: 24em;
     z-index: 3;
     clip-path: polygon(0 0, 100% 0, 100% 9em, 0 9em);
 }
@@ -165,6 +167,7 @@ pre b {
     position: sticky;
     top: 9em;
     padding-bottom: 3px;
+    padding-top: 2em;
     z-index: 9;
     background-color: #ffffff;
 }
