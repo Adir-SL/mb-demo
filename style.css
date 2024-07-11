@@ -178,6 +178,8 @@ pre b {
 
 .tabs {
     display: flex;
+    max-width: 1000px;
+    margin: auto;
     color: #333333;
     font-size: 1.2em;
     font-family: "Inter", sans-serif;
