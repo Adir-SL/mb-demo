@@ -4,6 +4,7 @@
     --primary-border: #dddddd;
     --primary-code: #eeeeee;
     --primary-code-text: #808080;
+    --primary-code-bold: #000000;
 }
 
 body {
@@ -135,7 +136,7 @@ pre {
 }
 
 pre b {
-    color: #000000;
+    color: var(--primary-code-bold);
 }
 
 .exampleDiv {
@@ -307,6 +308,8 @@ pre b {
         --primary-dark: #ffffff;
         --primary-border: #333333;
         --primary-code: #222222;
+        --primary-code-text: #dddddd;
+        --primary-code-bold: #ffffff;
     }
 }
 
