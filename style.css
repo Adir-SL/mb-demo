@@ -1,7 +1,9 @@
-:root{
+:root {
     --primary-light: #ffffff;
     --primary-dark: #333333;
     --primary-border: #dddddd;
+    --primary-code: #eeeeee;
+    --primary-code-text: #808080;
 }
 
 body {
@@ -122,14 +124,14 @@ h2 {
 }
 
 pre {
-    background-color: #eeeeee;
+    background-color: var(--primary-code);
     padding: 16px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
     border-radius: 8px;
     border: 1px solid var(--primary-border);
-    color: #808080;
+    color: var(--primary-code-text);
 }
 
 pre b {
@@ -300,15 +302,13 @@ pre b {
 }
 
 @media (prefers-color-scheme: dark) {
-    :root{
+    :root {
         --primary-light: #000000;
         --primary-dark: #ffffff;
         --primary-border: #333333;
+        --primary-code: #222222;
     }
-    pre{
-        background-color: #000000;
-    }
-  }
+}
 
 @media screen and (max-width: 800px) {
     pre {
