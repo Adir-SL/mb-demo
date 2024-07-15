@@ -226,7 +226,7 @@ pre b {
     transform: scale(1, 1);
 }
 
-.buttonFlex{
+.buttonFlex {
     display: flex;
 }
 
@@ -346,17 +346,21 @@ pre b {
         margin-top: 5vh;
         font-size: 1em;
     }
+
     .tabsDiv {
         top: 8.5em;
         padding-bottom: 3px;
     }
-    #titleDiv{
+
+    #titleDiv {
         flex-direction: column;
     }
-    .sticky{
+
+    .sticky {
         height: fit-content;
     }
-    header{
+
+    header {
         display: none;
     }
 }
