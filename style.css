@@ -54,7 +54,7 @@ header {
     font-weight: 400;
     font-style: normal;
     font-size: 5em;
-    color: var(--primary-light);
+    color: #ffffff;
     text-shadow: 0 0 32px #00000032;
     z-index: 4;
     display: flex;
