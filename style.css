@@ -5,6 +5,7 @@
     --primary-code: #eeeeee;
     --primary-code-text: #808080;
     --primary-code-bold: #000000;
+    --primary-accent: #ff770f;
 }
 
 body {
@@ -73,24 +74,24 @@ button {
     height: fit-content;
     padding: 12px 32px;
     background-color: var(--primary-light);
-    color: #ff770f;
+    color: var(--primary-accent);
     margin-right: 16px;
     margin-top: 0;
     cursor: pointer;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     transform: translate(-2px, -2px);
-    box-shadow: 2px 2px 0 0 #ff770f;
+    box-shadow: 2px 2px 0 0 var(--primary-accent);
     transition: transform 300ms ease-in-out 0s, box-shadow 300ms ease-in-out 0s
 }
 
 button:hover {
     transform: translate(0, 0);
-    box-shadow: 0 0 0 0 #ff770f;
+    box-shadow: 0 0 0 0 var(--primary-accent);
 }
 
 a {
-    color: #ff770f;
+    color: var(--primary-accent);
     text-decoration: none;
 }
 
@@ -121,7 +122,7 @@ h2 {
     font-weight: 400;
     font-size: 3em;
     line-height: 100%;
-    color: #ff770f;
+    color: var(--primary-accent);
 }
 
 pre {
@@ -166,7 +167,7 @@ pre b {
     height: 48px;
     margin-top: 24px;
     margin-left: 0;
-    background-color: #ff770f;
+    background-color: var(--primary-accent);
     animation: elemAnim 2000ms infinite;
 }
 
@@ -208,7 +209,7 @@ pre b {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #ff770f;
+    background-color: var(--primary-accent);
     animation: removeSelected 200ms ease-in-out forwards;
 }
 
@@ -305,11 +306,15 @@ pre b {
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-light: #000000;
-        --primary-dark: #ffffff;
+        --primary-dark: #dddddd;
         --primary-border: #333333;
         --primary-code: #222222;
-        --primary-code-text: #dddddd;
+        --primary-code-text: #aaaaaa;
         --primary-code-bold: #ffffff;
+        --primary-accent: #ca6415;
+    }
+    object{
+        filter: brightness(50%) hue-rotate(-20deg);
     }
 }
 
