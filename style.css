@@ -1,3 +1,9 @@
+:root{
+    --primary-light: #ffffff;
+    --primary-dark: #333333;
+    --primary-border: #dddddd;
+}
+
 body {
     overflow: hidden;
 }
@@ -44,7 +50,7 @@ header {
     font-weight: 400;
     font-style: normal;
     font-size: 5em;
-    color: #ffffff;
+    color: var(--primary-light);
     text-shadow: 0 0 32px #00000032;
     z-index: 4;
     display: flex;
@@ -63,7 +69,7 @@ button {
     border-radius: 8px;
     height: fit-content;
     padding: 12px 32px;
-    background-color: #ffffff;
+    background-color: var(--primary-light);
     color: #ff770f;
     margin-right: 16px;
     margin-top: 0;
@@ -97,7 +103,7 @@ a:hover {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 150%;
-    color: #333333;
+    color: var(--primary-dark);
 }
 
 .contentDiv iframe {
@@ -122,7 +128,7 @@ pre {
     font-weight: 400;
     font-style: normal;
     border-radius: 8px;
-    border: 1px solid #dddddd;
+    border: 1px solid var(--primary-border);
     color: #808080;
 }
 
@@ -172,15 +178,15 @@ pre b {
     padding-top: 2em;
     z-index: 9;
     max-width: 100%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #dddddd;
+    background-color: var(--primary-light);
+    border-bottom: 1px solid var(--primary-border);
 }
 
 .tabs {
     display: flex;
     max-width: 1000px;
     margin: auto;
-    color: #333333;
+    color: var(--primary-dark);
     font-size: 1.2em;
     font-family: "Inter", sans-serif;
 }
@@ -215,7 +221,7 @@ pre b {
 .tabContent {
     position: absolute;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--primary-light);
     opacity: 0;
     transform: scale(1, 0);
     /* transition: opacity 300ms linear 100ms; */
@@ -263,7 +269,7 @@ pre b {
 }
 
 .tab-item:active::before {
-    background-color: #dddddd;
+    background-color: var(--primary-border);
 }
 
 @keyframes elemAnim {
@@ -292,6 +298,17 @@ pre b {
     }
 
 }
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --primary-light: #000000;
+        --primary-dark: #ffffff;
+        --primary-border: #333333;
+    }
+    pre{
+        background-color: #000000;
+    }
+  }
 
 @media screen and (max-width: 800px) {
     pre {
