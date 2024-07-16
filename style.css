@@ -41,6 +41,7 @@ header {
 .sticky {
     position: sticky;
     top: 0;
+    width: calc(100% - 15px);
     height: 24em;
     z-index: 3;
     clip-path: polygon(0 0, 100% 0, 100% 9em, 0 9em);
