@@ -331,7 +331,8 @@ pre b {
         --primary-selected: #202020;
     }
 
-    header, .sticky {
+    header,
+    .sticky {
         filter: brightness(50%) hue-rotate(-20deg);
     }
 
@@ -367,11 +368,6 @@ pre b {
 
     .flexDiv {
         margin-bottom: 120px;
-    }
-
-    header object {
-        transform-origin: top center;
-        transform: scale(1.5);
     }
 
     #titleDiv {
