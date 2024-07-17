@@ -331,7 +331,7 @@ pre b {
         --primary-selected: #202020;
     }
 
-    object {
+    header, .sticky {
         filter: brightness(50%) hue-rotate(-20deg);
     }
 
