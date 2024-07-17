@@ -405,4 +405,7 @@ pre b {
     header {
         display: none;
     }
+    .invert{
+        filter: invert(100%) brightness(150%);
+    }
 }
