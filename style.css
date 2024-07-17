@@ -337,7 +337,8 @@ pre b {
         color: var(--primary-dark);
         box-shadow: 2px 2px 0 0 var(--primary-dark);
     }
-    .invert{
+
+    .invert {
         filter: invert(100%) brightness(150%);
     }
 }
