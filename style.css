@@ -25,11 +25,6 @@ body {
     overflow: auto;
 }
 
-object {
-    background-color: #84a819;
-    clip-path: polygon(0 0, 100% 0, 100% 24em, 0 24em);
-}
-
 header {
     position: absolute;
     top: 0;
