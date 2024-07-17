@@ -398,7 +398,7 @@ pre b {
     }
 
     .sticky {
-        height: fit-content;
+        height: 8em;
     }
 
     header {
