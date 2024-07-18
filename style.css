@@ -263,11 +263,6 @@ pre b {
     padding: 2px 24px;
 }
 
-/* .icon-button svg {
-    width: 24px;
-    height: 24px;
-} */
-
 @keyframes removeSelected {
     0% {
         width: 100%;
