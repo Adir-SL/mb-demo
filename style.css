@@ -217,7 +217,7 @@ pre b {
     content: '';
     position: absolute;
     bottom: -3px;
-    left: 0;
+    right: 0;
     height: 3px;
     width: 100%;
     background-color: var(--primary-accent);
@@ -225,8 +225,8 @@ pre b {
 }
 
 .tab-item.second::after {
-    left: unset;
-    right: 0;
+    left: 0;
+    right: unset;
 }
 
 .tab-item.selected::after {
