@@ -224,7 +224,7 @@ pre b {
     animation: removeSelected 200ms ease-in-out forwards;
 }
 
-.tab-item:nth-last-of-type(2)::after {
+.tab-item.second::after {
     left: unset;
     right: 0;
 }
