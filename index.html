@@ -57,6 +57,14 @@
                 }, 100);
             }
         }
+
+        function toggleMode(){
+            if(document.body.classList.contains("dark")){
+                document.body.classList.remove("dark");
+            }else{
+                document.body.classList.add("dark");
+            }
+        }
     </script>
 </head>
 
@@ -78,7 +86,7 @@
                 <div class="tab-item selected" onclick="selectTab(event);">Getting Started</div>
                 <div class="tab-item" onclick="selectTab(event);">Examples</div>
                 <div class="spacer"></div>
-                <button class="icon-button">
+                <button class="icon-button" onclick="toggleMode();">
                 </button>
 
             </div>
