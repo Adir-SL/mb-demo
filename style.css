@@ -330,7 +330,7 @@ pre b {
 
 }
 
-.dark :root {
+body.dark{
     --primary-light: #000000;
     --primary-dark: #dddddd;
     --primary-border: #333333;
