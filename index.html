@@ -47,12 +47,12 @@
 
         }
 
-        function resizeFunc(){
+        function resizeFunc() {
             var x = document.getElementsByTagName("object");
             var i;
             for (i = 0; i < x.length; i++) {
                 x[i].style.data = "";
-                setTimeout(function(){
+                setTimeout(function () {
                     x[i].style.data = "images/highway_anim.svg";
                 }, 100);
             }
@@ -67,8 +67,8 @@
         <h1 id="titleDiv"><span>MotionBlurJS</span>
             <div class="buttonFlex">
                 <button
-            onclick="window.open('https://adir-sl.github.io/MotionBlurJS/MotionBlurJS.zip');">Download</button><button
-            onclick="window.open('https://github.com/Adir-SL/MotionBlurJS');">Github</button>
+                    onclick="window.open('https://adir-sl.github.io/MotionBlurJS/MotionBlurJS.zip');">Download</button><button
+                    onclick="window.open('https://github.com/Adir-SL/MotionBlurJS');">Github</button>
             </div>
         </h1>
         <div class="sticky">
@@ -77,6 +77,15 @@
             <div class="tabs">
                 <div class="tab-item selected" onclick="selectTab(event);">Getting Started</div>
                 <div class="tab-item" onclick="selectTab(event);">Examples</div>
+                <div class="spacer"></div>
+                <button class="icon-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+                </button>
+
             </div>
         </div>
 
@@ -158,12 +167,13 @@
                 </div>
                 <div class="contentDiv">
                     <h2>Adding more ghosts</h2>
-                    Adding more ghosts can be done by altering the attribute <code>blurjs-ghost</code>, keep in mind that this attribute must only be a number. If not declared, this attribute will default to 4.
+                    Adding more ghosts can be done by altering the attribute <code>blurjs-ghost</code>, keep in mind
+                    that this attribute must only be a number. If not declared, this attribute will default to 4.
                     <br>
                     <pre>&lt;div class="someClass" <b>blurjs-ghost="12"</b>&gt;
     &lt;img src="" onerror="blurMe(event);" style="display: none !important" /&gt;
 &lt;/div&gt;</pre>
-                    
+
                     OR
                     <br>
                     <pre>&lt;div class="someClass" <b>blurjs-ghost="12"</b>&gt;
@@ -215,33 +225,41 @@
                 <div class="contentDiv">
 
                     <h2>Fading trail on a ball</h2>
-                    <iframe height="500" style="width: 100%;" scrolling="no" title="Ping Pong" src="https://codepen.io/Adir-SL/embed/XwoaZX" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    <iframe height="500" style="width: 100%;" scrolling="no" title="Ping Pong"
+                        src="https://codepen.io/Adir-SL/embed/XwoaZX" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
                         See the Pen <a href="https://codepen.io/Adir-SL/pen/XwoaZX">
-                        Ping Pong</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
+                            Ping Pong</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
                         on <a href="https://codepen.io">CodePen</a>.
-                      </iframe>
+                    </iframe>
 
                     <h2>Dynamic motion blur on click</h2>
-                    <iframe height="500" style="width: 100%;" scrolling="no" title="Motion Blur JS Click Around" src="https://codepen.io/Adir-SL/embed/ZENzGJX" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    <iframe height="500" style="width: 100%;" scrolling="no" title="Motion Blur JS Click Around"
+                        src="https://codepen.io/Adir-SL/embed/ZENzGJX" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
                         See the Pen <a href="https://codepen.io/Adir-SL/pen/ZENzGJX">
-                        Motion Blur JS Click Around</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
+                            Motion Blur JS Click Around</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
                         on <a href="https://codepen.io">CodePen</a>.
-                      </iframe>
+                    </iframe>
 
-                      <h2>Motion Blur with lots of ghosts</h2>
-                      <iframe height="500" style="width: 100%;" scrolling="no" title="Center Ball" src="https://codepen.io/Adir-SL/embed/JjqvypX" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    <h2>Motion Blur with lots of ghosts</h2>
+                    <iframe height="500" style="width: 100%;" scrolling="no" title="Center Ball"
+                        src="https://codepen.io/Adir-SL/embed/JjqvypX" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
                         See the Pen <a href="https://codepen.io/Adir-SL/pen/JjqvypX">
-                        Center Ball</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
+                            Center Ball</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
                         on <a href="https://codepen.io">CodePen</a>.
-                      </iframe>
+                    </iframe>
 
-                      <h2>Animated SVG with motion blur</h2>
-                      <iframe height="500" style="width: 100%;" scrolling="no" title="SVG Motion Blur" src="https://codepen.io/Adir-SL/embed/gOJNvqd" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    <h2>Animated SVG with motion blur</h2>
+                    <iframe height="500" style="width: 100%;" scrolling="no" title="SVG Motion Blur"
+                        src="https://codepen.io/Adir-SL/embed/gOJNvqd" frameborder="no" loading="lazy"
+                        allowtransparency="true" allowfullscreen="true">
                         See the Pen <a href="https://codepen.io/Adir-SL/pen/gOJNvqd">
-                        SVG Motion Blur</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
+                            SVG Motion Blur</a> by Adir (<a href="https://codepen.io/Adir-SL">@Adir-SL</a>)
                         on <a href="https://codepen.io">CodePen</a>.
-                      </iframe>
-                      
+                    </iframe>
+
                 </div>
             </div>
         </div>

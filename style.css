@@ -251,6 +251,23 @@ pre b {
     display: flex;
 }
 
+.spacer {
+    width: 100%;
+}
+
+.icon-button {
+    border: 1px solid lightgray;
+    box-shadow: none;
+    color: #333333;
+    font-size: 2em;
+    padding: 2px 12px;
+}
+
+.icon-button svg {
+    width: 24px;
+    height: 24px;
+}
+
 @keyframes removeSelected {
     0% {
         width: 100%;
