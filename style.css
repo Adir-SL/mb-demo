@@ -257,8 +257,7 @@ pre b {
 
 .icon-button {
     border: 1px solid lightgray;
-    box-shadow: none;
-    color: #333333;
+    box-shadow: none !important;
     font-size: 2em;
     padding: 15px 15px;
     background-repeat: no-repeat;
