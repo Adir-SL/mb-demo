@@ -252,7 +252,7 @@ pre b {
 }
 
 .spacer {
-    width: 100%;
+    flex-grow: 1;
 }
 
 .icon-button {
