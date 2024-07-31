@@ -449,6 +449,14 @@ body.dark {
     pre code {
         filter: invert(100%);
     }
+
+    .dark pre {
+        background-color: #f5f2f0 !important;
+    }
+
+    .dark pre code {
+        filter: none;
+    }
 }
 
 @media screen and (max-width: 800px) {
